@@ -1,5 +1,82 @@
-/*
+@media print {
+    div[class="tm-sidebar"],
+    div[class="flex-item tm-team-img"],
+    div[id="about"],
+    div[class="tm-content-box"],
+    ol[class="carousel-indicators"],
+    div[class="carousel-item"],
+    section[class="tm-content-box"] {
+        display: none
+    }
 
-write your code here
+    div[class="tm-banner"],
+    section[class="heading tm-content-box"],
+    div[class="tm-content-box flex-2-col"],
+    div[class="tm-main-content"],
+    div[class="tm-content-box tm-content-header margin-b-10"],
+    div[class="padding-medium flex-item tm-team-description-container flex-item"],
+    div[class="padding-medium"],
+    div[class="padding-medium flex-item tm-team-description-container"],
+    div[class="carousel slide tm-content-box"] {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    
+    }
 
-*/
+    div[class="padding-medium flex-item tm-team-description-container flex-item"],
+    div[class="padding-medium flex-item tm-team-description-container"] {
+        display: inline;
+    }
+
+    div.padding-medium h2, h2[class="tm-section-title"] {
+        text-align: center;
+        color:lightskyblue;
+        text-transform: uppercase;
+        font-weight: 300
+    }
+
+    p.tm-section-description {
+        text-align: center;
+    }
+
+    div[class="padding-medium flex-item tm-team-description-container flex-item"] 
+    p.tm-section-description:last-child {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    div[class="padding-medium"] ol {
+        list-style-type: none;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    div[class="padding-medium"] ol li:nth-child(1n) {
+        flex-basis: 100%;
+        padding-left: 60%;
+    }
+
+    div[class="padding-medium"] ol li:nth-child(2n) {
+        flex-basis: 100%;
+        padding-left: 20%;
+    }
+
+    section.blocks 
+    p.tm-section-description:nth-child(2) {
+        padding-left: 40px;
+        padding-right: 40px
+    }
+
+    section.blocks 
+    p.tm-section-description:nth-child(3) {
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        font-style: italic;
+    }
+}
+
