@@ -223,7 +223,7 @@ p.tm-banner-text {
     textarea#contact_message {
         border-color: lightskyblue;
         box-shadow: none;
-        background-image:url(/FL12_HW2/homework/img/email-icon.png);
+        background-image:url(../img/email-icon.png);
         background-repeat:no-repeat;
         background-size: 2.5%;
         background-position-x: 99.5%;
