@@ -1,1 +1,293 @@
-// Write your styles here
+body {
+    margin: 0;
+}
+
+.header {
+                background: $backgroundImageHeader;
+                background-size: $backgroundImageHeaderSize;
+                background-position: $backgroundImageHeaderPosition;
+                background-size: $backgroundImageHeaderSize;
+                padding-bottom: 7.4em;
+                border-radius: 0 0 550px / 165px 0;
+            
+   
+} 
+
+@mixin landingLogoPosition {
+                position: absolute;
+                padding-left: $logoPaddingLeft;
+                padding-top: $logoPaddingTop;
+                width: $logoPositionWidth;
+                height: $logoPositionHeight;
+
+}
+
+.header {
+    .header-wrap {
+        .landing-logo {
+            img {
+                @include landingLogoPosition;
+                }
+        }
+    }
+}
+
+@mixin landingLabelLogoPosition {
+                position: relative;
+                padding-left: $logoPaddingLeft + 2.45em;
+                margin-top: 0;
+                padding-top: $logoPaddingTop + 0.25em;
+}
+
+.header {
+    .header-wrap {
+        .landing-logo {
+            p {
+                @include landingLabelLogoPosition;
+                font-family: $labelLogoFont;
+                color: $labelLogoColor;
+                line-height: $labelLogoLineHeight;
+                font-weight: bold;
+                text-align: center;
+                display: inline-block;
+                }
+        }
+    }
+}
+
+.header {
+    .header-wrap {
+        .landing-logo {
+            p span:before {
+                content: ''; 
+                display: block;
+                }
+        }
+    }
+}
+
+.header {
+    .header-wrap {
+        .landing-logo {
+            p { 
+                span {
+                font-weight: bold;
+                font-size: 0.42em;
+                }
+             }
+        }
+    }
+}
+
+.header_heading {
+                font-family: $fontFamilySans;
+                font-size: 3em;
+                color: $labelLogoColor;
+                margin-bottom: 0.53em;
+                
+                
+}
+
+.header_text {
+                white-space: pre; 
+                font-family: $labelLogoFont;
+                color: $labelLogoColor;
+                font-size: 0.65em;
+                line-height: 1.5;
+                letter-spacing: 0.007em;
+                margin-top: 155px;
+                padding-left: 9.25em;
+                padding-right: 60%;
+                margin-bottom: 0;
+                
+                
+}
+
+.header_heading {
+                @extend .header_heading;
+                font-weight: bold;
+                margin-top: 34px;
+                padding-left: 129px;
+                padding-right: 60%;
+                line-height: 1;
+                position: absolute;
+                z-index:1;
+                
+}
+
+
+@mixin buttons {
+                background-color: $buttonColor;
+                border: none;
+                color: white;
+                padding: 8px 28px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                font-weight: bold;
+                border-radius: 2px;
+                font-family: $fontFamilySans;
+                
+}
+
+.header_button {
+                @include buttons;
+                margin-top: 28px;
+                margin-left: 129px;
+}
+
+@mixin links {
+                font-family: $fontFamilySans;
+                color: white;
+                font-weight: 600;
+                font-size: 13px;
+}
+
+.login {
+                @include links;
+                
+                margin-left: 98px;          
+}
+
+
+
+  .header_text::before {
+    content: '';
+    margin-top: -60px;
+    margin-left: 33px;
+    width: 200px;
+    height: 35px;
+    background-color: $awesomeBackgroundColor;
+    position: absolute;
+    z-index:0;
+}
+
+.header_text::after {
+    content: '';
+    margin-top: 210px;
+    margin-left: 528px;
+    width: 126px;
+    height: 35px;
+    background-color: $awesomeBackgroundColor;
+    position: absolute;
+    z-index:0;
+}
+
+.section_text {
+    text-align: center;
+    font-family: $fontFamilySans;
+    font-weight: 600;
+    font-size: 28px;
+    margin-left:15px;
+    margin-top:20px;
+    color: $sectionTextColor;
+    position: sticky;
+    z-index:1;
+}
+
+body {
+    background-color: $mainBackgroundColor;
+}
+
+.section_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $sectionBackCardColor;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 270px;
+    margin-right: 250px;
+    border-radius: 3px;
+    
+}
+
+.section_card_img {
+    width: 130%;
+    height: 130%;
+    padding-left: 13px;
+    padding-top: 13px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    border-radius: 2px;
+}
+
+.section_card_right_container {
+    color: $sectionMainColor;
+    font-family: $labelLogoFont;
+    font-size: 11px;
+    text-align: justify;
+    padding-top: 35px;
+    padding-right:60px;
+}
+
+.section_card_heading {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.section_link {
+    text-align: center;
+    color: $sectionMainColor;
+    font-size: 11px;
+    padding-left: 125px;
+}
+
+.section_banner {
+    display: flex;
+    flex-direction: row;
+    margin-left:240px;
+    margin-right:225px;
+    margin-top:42px;
+    background-image: linear-gradient(to right, $Gradient-1, $Gradient-2);
+    border-radius: 4px;
+}
+
+
+.section_banner_button {
+    @include buttons;
+    margin-top: 32px;
+    margin-bottom: 34px;
+    margin-left:300px;
+    
+    
+}
+
+
+.section_banner_heading {
+    font-family: 'Hind', sans-serif;
+    font-weight: 600;
+    color: $sectionTextColor;
+    font-size: 20px;
+    margin-left:110px;
+    margin-bottom: 0;
+    margin-top: 18px;
+    position: absolute;
+    z-index:3;
+}
+
+.section_banner_text {
+    color: #fff;
+    font-family: $fontFamilySans;
+    font-size: 11px;
+    margin-left: 110px;
+    margin-top: 55px;
+    margin-bottom: 0;
+    position: sticky;
+}
+
+.section_banner_text::before {
+    content: '';
+    margin-top: -45px;
+    margin-left: 83px;
+    width: 40px;
+    height: 35px;
+    background-color: $awesomeBackgroundColor;
+    position: absolute;
+    z-index:0;
+}
+
