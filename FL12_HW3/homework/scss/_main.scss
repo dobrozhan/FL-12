@@ -45,7 +45,7 @@ body {
             p {
                 @include landingLabelLogoPosition;
                 font-family: $labelLogoFont;
-                color: $labelLogoColor;
+                color: map-get($colors, "lableSection");
                 line-height: $labelLogoLineHeight;
                 font-weight: bold;
                 text-align: center;
@@ -82,7 +82,7 @@ body {
 .header_heading {
                 font-family: $fontFamilySans;
                 font-size: 3em;
-                color: $labelLogoColor;
+                color: map-get($colors, "lableSection");
                 margin-bottom: 0.53em;
                 
                 
@@ -91,7 +91,7 @@ body {
 .header_text {
                 white-space: pre; 
                 font-family: $labelLogoFont;
-                color: $labelLogoColor;
+                color: map-get($colors, "lableSection");
                 font-size: 0.65em;
                 line-height: 1.5;
                 letter-spacing: 0.007em;
@@ -117,7 +117,7 @@ body {
 
 
 @mixin buttons {
-                background-color: $buttonColor;
+                background-color: map-get($colors, "button");
                 border: none;
                 color: white;
                 padding: 8px 28px;
@@ -158,7 +158,7 @@ body {
     margin-left: 33px;
     width: 200px;
     height: 35px;
-    background-color: $awesomeBackgroundColor;
+    background-color: map-get($colors, "highlight");
     position: absolute;
     z-index:0;
 }
@@ -169,7 +169,7 @@ body {
     margin-left: 528px;
     width: 126px;
     height: 35px;
-    background-color: $awesomeBackgroundColor;
+    background-color: map-get($colors, "highlight");
     position: absolute;
     z-index:0;
 }
@@ -181,20 +181,20 @@ body {
     font-size: 28px;
     margin-left:15px;
     margin-top:20px;
-    color: $sectionTextColor;
+    color: map-get($colors, "lableSection");
     position: sticky;
     z-index:1;
 }
 
 body {
-    background-color: $mainBackgroundColor;
+    background-color: map-get($colors, "mainBackgroundColor");
 }
 
 .section_card {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: $sectionBackCardColor;
+    background-color: map-get($colors, "sectionBackCardColor");
     margin-top: 20px;
     margin-bottom: 5px;
     margin-left: 270px;
@@ -214,7 +214,7 @@ body {
 }
 
 .section_card_right_container {
-    color: $sectionMainColor;
+    color: map-get($colors, "sectionMainColor");
     font-family: $labelLogoFont;
     font-size: 11px;
     text-align: justify;
@@ -231,8 +231,9 @@ body {
 }
 
 .section_link {
+    @include links;
     text-align: center;
-    color: $sectionMainColor;
+    color: map-get($colors, "sectionMainColor");
     font-size: 11px;
     padding-left: 125px;
 }
@@ -243,7 +244,7 @@ body {
     margin-left:240px;
     margin-right:225px;
     margin-top:80px;
-    background-image: linear-gradient(to right, $Gradient-1, $Gradient-2);
+    background-image: linear-gradient(to right, map-get($colors, "Gradient-1"), map-get($colors, "Gradient-2"));
     border-radius: 4px;
 }
 
@@ -261,7 +262,7 @@ body {
 .section_banner_heading {
     font-family: 'Hind', sans-serif;
     font-weight: 600;
-    color: $sectionTextColor;
+    color: map-get($colors, "lableSection");
     font-size: 20px;
     margin-left:110px;
     margin-bottom: 0;
@@ -271,7 +272,7 @@ body {
 }
 
 .section_banner_text {
-    color: #fff;
+    color: map-get($colors, "sectionMainColor");
     font-family: $fontFamilySans;
     font-size: 11px;
     margin-left: 110px;
@@ -286,13 +287,13 @@ body {
     margin-left: 83px;
     width: 40px;
     height: 35px;
-    background-color: $awesomeBackgroundColor;
+    background-color: map-get($colors, "highlight");
     position: absolute;
     z-index:0;
 }
 
 .footer {
-    background-color: $footerBackgroundColor;
+    background-color: map-get($colors, "footerBackgroundColor");
     margin-top: -50px;
     width: 100%;
     position: absolute;
@@ -308,7 +309,7 @@ body {
     @include landingLabelLogoPosition;
     margin-top: 77px;
     font-family: $labelLogoFont;
-    color: $sectionMainColor;
+    color: map-get($colors, "sectionMainColor");
     line-height: $labelLogoLineHeight;
     font-weight: bold;
     text-align: center;
@@ -332,7 +333,7 @@ body {
 .footer .footer_text {
     text-align: left;
     position: sticky;
-    color: $sectionMainColor;
+    color: map-get($colors, "sectionMainColor");
     font-family: $labelLogoFont;
     font-size: 9px;
     font-weight: 200;
@@ -343,7 +344,7 @@ body {
 .footer .footer-cr {
     text-align: right;
     position: absolute;
-    color: $sectionMainColor;
+    color: map-get($colors, "sectionMainColor");
     font-family: $labelLogoFont;
     font-size: 10.5px;
     font-weight: 200;

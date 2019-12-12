@@ -5,16 +5,12 @@ $logoPositionHeight: 1.85em;
 $backgroundImageHeader: url(../img/m-h-day.jpg) no-repeat;
 $backgroundImageHeaderSize: 101%;
 $backgroundImageHeaderPosition: 0px -183px;
-$labelLogoColor: #2C2F3C;
 $labelLogoLineHeight: 0.75;
-$awesomeBackgroundColor: #14A0C7;
-$fontFamilySans: 'Source Sans Pro', sans-serif;
-$labelLogoFont: 'Hind', sans-serif;
-$buttonColor: #699900;
-$mainBackgroundColor: #FFFFFF;
-$sectionTextColor: #2C2F3C;
-$sectionMainColor: #B4BBC2;
-$sectionBackCardColor: #2C2F3C;
-$Gradient-1: #65950E;
-$Gradient-2: #315FCC;
-$footerBackgroundColor: #21232E;
+$fontFamilySans: ('Source Sans Pro', sans-serif);
+$labelLogoFont: ('Hind', sans-serif);
+
+$colors: 
+("lableSection": #2C2F3C, "sectionBackCardColor": #21232E, "highlight": #14A0C7, "button": #699900, 
+"mainBackgroundColor": #FFFFFF,  "sectionMainColor": #B4BBC2,
+"Gradient-1": #65950E, "Gradient-2": #315FCC, "footerBackgroundColor": #21232E);
+

@@ -112,7 +112,7 @@ body {
   font-size: 28px;
   margin-left: 15px;
   margin-top: 20px;
-  color: #FFF;
+  color: #FFFFFF;
   position: sticky;
   z-index: 1; }
 
@@ -154,6 +154,10 @@ body {
   font-weight: 600; }
 
 .section_link {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
   text-align: center;
   color: #B4BBC2;
   font-size: 11px;
@@ -187,7 +191,7 @@ body {
 .section_banner_heading {
   font-family: 'Hind', sans-serif;
   font-weight: 600;
-  color: #FFF;
+  color: #FFFFFF;
   font-size: 20px;
   margin-left: 110px;
   margin-bottom: 0;
@@ -196,7 +200,7 @@ body {
   z-index: 3; }
 
 .section_banner_text {
-  color: #fff;
+  color: #B4BBC2;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 11px;
   margin-left: 110px;
