@@ -14,9 +14,12 @@ body {
     height: 9vh;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0 10vw 0 10vw;
+    position: fixed; 
+    width: 100%;
+    background-color: white;
+
 }
 
 #logo-text {
@@ -46,10 +49,12 @@ a.ref-menu:hover {
     color: #bfba55;
 }
 
+
+
 .hello-section {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/home-bg.jpg) no-repeat;
     background-size: 100vw;
-    height: 91vh;
+    height: 100vh;
 }
 
 .hello-section {
