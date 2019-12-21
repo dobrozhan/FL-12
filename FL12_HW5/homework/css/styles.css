@@ -421,8 +421,6 @@ body {
   .even-post .image-align {
     order: 1;
     max-width: 120%;
-    
-    object-fit: cover;
   }
   .box-align {
     display: flex;
@@ -632,8 +630,6 @@ body {
     .even-post .image-align {
       order: 1;
       max-width: 120%;
-      
-      object-fit: cover;
     }
     .box-align {
       display: flex;
@@ -711,7 +707,7 @@ body {
     }
     .image-align {
       width:200%;
-    }
+     }
     .footer-container p {
       padding:0;
       width: 95%;
