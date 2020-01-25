@@ -3,10 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Homework 12 - Simple TODO List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
   <div id="root"></div>
+  <div class="list_of_sets">Add new term and its definition</div>
+
+  <div class="add_item">
+  <button type="submit" id="btn_input" class="btn_input">Add new</button>
+  </div>
+  <div class="clear_item">
+  <button type="submit" id="btn_clear" class="btn_clear">Delete all</button>
+  </div>
+
+  <input type="text" name="input" id="input_term" placeholder="Enter term" required/>
+  <input type="text" name="input" id="input_def" placeholder="Enter definition..."/>
+  <div class="list_of_sets">List of sets</div>
+
+  <div class="content">
+    <ul id="list"></ul>
+  </div>
+
+
+  <nav>
+    <a href="http://127.0.0.1:5500/FL12_HW12/homework/index.html#main" class="link" id="main">Main page</a>
+    <a href="http://127.0.0.1:5500/FL12_HW12/homework/index.html#newset" class="link" id="newset">Add new set</a>
+    <a href="http://127.0.0.1:5500/FL12_HW12/homework/index.html#editset" class="link" id="editset">Modify exist set</a>
+  </nav>
+
+
 
   <script src="./src/app.js"></script>
 </body>
