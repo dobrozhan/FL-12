@@ -1,0 +1,25 @@
+.folder-color {
+  color: orange;
+}
+
+.file-color {
+  color: grey;
+}
+
+.onclick {
+  display: none;
+  cursor: pointer;
+}
+
+.level-2 {
+  padding-left: 20px;
+}
+
+.level-3 {
+  padding-left: 20px;
+}
+
+.level-empty {
+  font-style: italic;
+  padding-left: 20px;
+}
