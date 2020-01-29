@@ -1,21 +1,52 @@
-const list = document.getElementById('list');
-const input_term = document.getElementById('input_term');
-const input_def = document.getElementById('input_def');
-const clear = document.getElementById('btn_clear');
-const input = document.getElementById('btn_input');
+let list = document.getElementById('list');
+let input = document.getElementById('btn_input');
 let toDo, edit, trash;
 let LIST = [];
 let id = 0;
 
+window.location.hash = '#/main';
+
+switch(location.hash){
+    case '#/main':
+        document.getElementById('wrapper_new_set').style.display = 'none';
+        document.getElementById('wrapper_modify_set').style.display = 'none';
+        const newButton = document.getElementById('btnInput');
+        newButton.addEventListener('click', () => {window.location.hash = '#/set'; setHash()});
+        break;
+    case '#/set':
+        document.getElementById('wrapper_main').style.display = 'none';
+        document.getElementById('wrapper_modify_set').style.display = 'none';
+        console.log('hello');
+      // code block
+        break;
+    case '#/modify':
+        document.getElementById('wrapper_main').style.display = 'none';
+        document.getElementById('wrapper_new_set').style.display = 'none';
+        // code block
+        break;
+    default:
+        break;
+  }
+
+  function setHash() {
+    console.log('hello');
+    document.getElementById('wrapper_new_set').style.display = 'block';
+    document.getElementById('wrapper_main').style.display = 'none';
+    const addTerms = document.getElementById('addTerms');
+    addTerms.addEventListener('click', () => termDefBlock());
+  }
+
+  function termDefBlock() {
+    document.getElementById('term').style.display = 'block';
+    document.getElementById('def').style.display = 'block';
+    document.getElementById('remove').style.display = 'block';
+  }
+
+
 function addToDo(toDO, id, edit, trash) {
 
-    if ( trash ) { 
+    if (trash) { 
         return; 
-    }
-
-    if ( edit ) { 
-        document.getElementById('input_term').innerHTML = input_term; 
-        document.getElementById('input_def').innerHTML = input_def;
     }
 
     const text = `<li class='item'>
@@ -51,7 +82,10 @@ document.addEventListener('keyup', function(event){
 }
 )
 
-list.addEventListener('click', function(event) {
+
+input.addEventListener('click', console.log('hello'));
+
+list.addEventListener('click', function(event){
             let element = event.target;
             const elementJOB = event.target.attributes.job.value;
             if ( elementJOB === 'edit') {
@@ -69,9 +103,6 @@ function removeToDO(element) {
 
 function editToDo() {
     console.log('dsdsds');
-    document.getElementById('input_term').innerHTML = 'hhhS'; 
-    document.getElementById('input_def').innerHTML = 'hhhS';
-
 }
 
 
@@ -101,8 +132,3 @@ if(data){
     const ZERO = 0;
     id = ZERO;
 }
-
-document.getElementsByClassName('btn_clear').addEventListener('click', function(){
-    localStorage.clear();
-    location.reload();
-});

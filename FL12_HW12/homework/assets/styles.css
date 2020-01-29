@@ -1,19 +1,8 @@
-.btn_input {
+#btnInput, #addTerms, #saveChanges, #cancel, #remove {
     background-color: grey;
     border-radius: 10px;
     color: white;
-    float:right;
     font-size: 14px;
-    margin-right: 900px;
-}
-
-.btn_clear {
-    background-color: grey;
-    border-radius: 10px;
-    color: white;
-    float:right;
-    font-size: 14px;
-    margin-right: -160px;
 }
 
 .list_of_sets {
@@ -25,24 +14,18 @@
     margin-bottom: 10px;
 }
 
-.link {
- text-decoration: none;
- font-size: 15px;
+.item {
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 10%;
 }
 
-a {
-    margin-left: 10px;
-}
-
-a:visited {
-    text-decoration: none; 
-}
-
-nav {
-    margin-top: 200px;
-}
-
-#input_term, #input_def {
+#term, #def, #name {
+    display: none;
+    margin-top: 10px;
     font-size: 17px;
     color: green;
     border-bottom-color: grey;
@@ -54,13 +37,4 @@ nav {
 
 ::placeholder {
     color: grey;
-}
-
-.item {
-    list-style: none;
-    display: flex;
-    align-items: baseline;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    width: 10%;
 }

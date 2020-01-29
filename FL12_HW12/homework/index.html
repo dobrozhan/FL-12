@@ -7,32 +7,29 @@
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
+
+  <div id="wrapper_main">
   <div id="root"></div>
-  <div class="list_of_sets">Add new term and its definition</div>
-
-  <div class="add_item">
-  <button type="submit" id="btn_input" class="btn_input">Add new</button>
-  </div>
-  <div class="clear_item">
-  <button type="submit" id="btn_clear" class="btn_clear">Delete all</button>
-  </div>
-
-  <input type="text" name="input" id="input_term" placeholder="Enter term" required/>
-  <input type="text" name="input" id="input_def" placeholder="Enter definition..."/>
-  <div class="list_of_sets">List of sets</div>
-
   <div class="content">
+    <input type="submit" id="btnInput" value="Add new">
+    <div class="list_of_sets">List of sets</div>
     <ul id="list"></ul>
   </div>
+  </div>
 
+  <div id="wrapper_new_set">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="submit" id="addTerms" value="Add terms">
+    <input type="submit" id="saveChanges" value="Save changes">
+    <input type="submit" id="cancel" value="Cancel">
+    
+    <input type="text" id="term" placeholder="Term...">
+    <input type="text" id="def" placeholder="Definition...">
+    <input type="submit" id="remove" value="Remove">
+  </div>
 
-  <nav>
-    <a href="http://127.0.0.1:5500/FL12_HW12/homework/index.html#main" class="link" id="main">Main page</a>
-    <a href="http://127.0.0.1:5500/FL12_HW12/homework/index.html#newset" class="link" id="newset">Add new set</a>
-    <a href="http://127.0.0.1:5500/FL12_HW12/homework/index.html#editset" class="link" id="editset">Modify exist set</a>
-  </nav>
-
-
+  <div id="wrapper_modify_set">
+  </div>
 
   <script src="./src/app.js"></script>
 </body>
